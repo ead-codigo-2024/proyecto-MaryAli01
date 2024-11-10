@@ -1,0 +1,129 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 1</title>
+    <style>
+
+        body {
+            margin-top: 0;
+            padding: 20px;
+            font-family: Rockwell, sans-serif;
+        }
+
+    
+        h2, pre {
+    max-width: 400px; /* Establece un máximo de ancho para el texto */
+    width: 100%;
+    margin: 0 auto; /* Centra los elementos en la página */
+   
+}
+
+h2 {
+    font-family: Rockwell, sans-serif;
+    font-size: 12px;
+    margin-top: 200px;
+    color: grey;
+}
+
+pre {
+    font-family: Rockwell, sans-serif; 
+    font-size: 14px;
+    color: darkblue;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: left; /* Mantiene el formato original del <pre> */
+    margin-top: 20px;
+}
+
+       
+        .pagination-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            color: gainsboro;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .pagination-button {
+            padding: 12px 24px;
+            font-family: rockwell;
+            font-size: 16px;
+            font-weight: bold;
+            background-color:rgba(0, 0, 0, 0.6);;
+            color: gainsboro;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px; /* Ancho fijo para ambos botones */
+        }
+
+        /* Flechas dentro de los botones */
+        .pagination-button.prev::before {
+            content: "◀";
+            margin-right: 8px;
+        }
+        
+        .pagination-button.next::after {
+            content: "▶";
+            margin-left: 8px;
+        }
+
+        /* Efecto hover */
+        .pagination-button:hover {
+            background-color: rgba(0, 0, 139, 0.8);
+        }
+
+
+    </style>
+
+     </head>
+
+<body>
+
+
+        <h2>Ver Amereida Pag.3</h2>
+        <pre>¿no fue el hallazgo ajeno
+
+            a los descubrimientos[1]
+          
+          
+          
+            –  oh marinos
+          
+          sus pájaras salvajes
+          
+            el mar incierto
+          
+            las gentes desnudas entre sus dioses !  –
+          
+            porque el don para mostrarse
+          
+            equivoca la esperanza?</pre>
+
+
+<div class="pagination-container">
+    <button class="pagination-button prev" onclick="navigate('Portada.html')">Anterior</button>
+    <button class="pagination-button next" onclick="navigate('Pagina 2.html')">Siguiente</button>
+</div>
+
+  <script>
+   // Función de navegación
+   function navigate(page) {
+            window.location.href = page;
+        }
+    
+</script>
+
+   </body>
+</html>

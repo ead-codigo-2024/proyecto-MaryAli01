@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 12</title>
+    <style>
+
+        body {
+            margin-top: 0;
+            padding: 20px;
+            font-family: Rockwell, sans-serif;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+            gap: 20px; /* Espacio entre columnas */
+            max-width: 1200px;
+            margin-top: 350px;
+            margin-left: 10%;
+            margin-bottom: 10%;
+        }
+
+        pre{
+            font-family: Rockwell, sans-serif; 
+            font-size: 15px;
+            padding: 0;
+            margin-top: 5px;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            flex-direction: column;
+            color: darkblue;
+        }
+
+
+       
+           h2{
+            font-family: Rockwell, sans-serif;
+            margin-top: 0;
+            font-size: 10px;
+            padding: 0;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            color: grey;
+        }
+
+        body {
+            margin: 20px; 
+            padding: 10px;
+        
+        }
+
+      img {
+         width:"300"; 
+        height:"600";
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+      .pagination-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            color: gainsboro;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .pagination-button {
+            padding: 12px 24px;
+            font-family: rockwell;
+            font-size: 16px;
+            font-weight: bold;
+            background-color:rgba(0, 0, 0, 0.6);;
+            color: gainsboro;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px; /* Ancho fijo para ambos botones */
+        }
+
+        /* Flechas dentro de los botones */
+        .pagination-button.prev::before {
+            content: "◀";
+            margin-right: 8px;
+        }
+        
+        .pagination-button.next::after {
+            content: "▶";
+            margin-left: 8px;
+        }
+
+        /* Efecto hover */
+        .pagination-button:hover {
+            background-color: rgba(0, 0, 139, 0.8);
+        }
+
+      
+    </style>
+
+     </head>
+
+<body>
+
+
+<div class="contenedor">
+    <div class="columna">
+        <h2>Ver Amereida Pag.3</h2>
+        <pre>el camino no es el camino</pre>
+
+    </div>
+
+    <div class="columna">
+        
+    </div>
+</div>
+
+<div class="pagination-container">
+    <button class="pagination-button prev" onclick="navigate('Pagina 11.html')">Anterior</button>
+    <button class="pagination-button next" onclick="navigate('Creditos.html')">Creditos</button>
+</div>
+
+  <script>
+   // Función de navegación
+   function navigate(page) {
+            window.location.href = page;
+        }
+  </script>
+
+
+   </body>
+</html>

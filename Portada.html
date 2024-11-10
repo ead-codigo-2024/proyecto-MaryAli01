@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signos de una Identidad Encontrada</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Rockwell, sans-serif;
+            background-image: url(CamScanner\ 01-04-2024\ 00.45_8.jpg); 
+            background-size: cover;
+            background-position: center top 200px;
+            background-attachment: fixed; 
+            background-repeat: no-repeat;
+            
+
+        }
+
+
+        h1{
+            font-family: Rockwell, sans-serif;
+            margin-top: 100px;  
+            font-size: 30px;
+            font-weight: bolder;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            height: 10vh;
+            flex-direction: column;
+        }
+        @media (max-width: 500px) {
+    pre {
+        font-size: 20px; 
+    }
+}
+      
+           h2{
+            font-family: Rockwell, sans-serif;
+            margin-top: 30px;
+            font-size: 15px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 0vh;
+            flex-direction: column;
+        }
+    
+      
+      .pagination-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            color: gainsboro;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .pagination-button {
+            padding: 12px 24px;
+            font-family: rockwell;
+            font-size: 16px;
+            font-weight: bold;
+            background-color:rgba(163, 158, 158, 0.6);;
+            color: bo;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+        }
+
+        .pagination-button.prev::before {
+            content: "◀";
+            margin-right: 8px;
+        }
+        
+        .pagination-button.next::after {
+            content: "▶";
+            margin-left: 8px;
+        }
+
+        .pagination-button:hover {
+            background-color: rgba(15, 15, 199, 0.489);
+        }
+    </style>
+
+     </head>
+
+<body>
+<h1>Signos De Una Identidad Encontrada</h1>
+
+<h2>Interpretación Gráfica Amereida Vol. 1<br>  
+ por Maria Alejandra Pérez </h2>
+
+<div class="pagination-container">
+
+    <button class="pagination-button next" onclick="navigate('Pagina 1.html')">Siguiente</button>
+</div>
+
+  <script>
+   function navigate(page) {
+            window.location.href = page;
+        }
+  
+</script>
+
+   </body>
+</html>

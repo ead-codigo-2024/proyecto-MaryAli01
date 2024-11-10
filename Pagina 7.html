@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 7</title>
+    <style>
+
+body {
+            margin: 0;
+            padding: 20px;
+            font-family: Rockwell, sans-serif;
+            background-image: url(Foto\ pag\ 7.jpg); 
+            background-size: cover;
+            background-position: center top 100px;
+            background-attachment: fixed; /* Para que la imagen de fondo no se desplace con el scroll */
+            background-repeat: no-repeat;
+            color: gainsboro;
+
+        }
+        
+    
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr; /* Una sola columna por defecto */
+            gap: 20px; /* Espacio entre columnas */
+            max-width: 100%;
+            margin-top: 40px; /* Centrar en pantallas grandes */
+            max-width: 600px; /* Ancho máximo para el contenedor */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px; /* Margen superior fijo */
+            margin-bottom: 30px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+    
+
+        h2, pre {
+    max-width: 400px; /* Establece un máximo de ancho para el texto */
+    width: 100%;
+    margin: 0 auto; /* Centra los elementos en la página */
+   
+}
+
+h2 {
+    font-family: Rockwell, sans-serif;
+    font-size: 14px;
+    margin-top: 30px;
+    color: grey;
+}
+
+pre {
+    font-family: Rockwell, sans-serif; 
+    font-size: 16px;
+    color: darkblue;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: left; /* Mantiene el formato original del <pre> */
+    margin-top: 20px;
+}
+
+
+@media (max-width: 400px) {
+    pre {
+        font-size: 14px; 
+    }
+}
+
+
+        /* Media query para pantallas más grandes */
+        @media (min-width: 600px) {
+            .contenedor {
+                grid-template-columns: 1fr 1fr; /* Dos columnas solo en pantallas grandes */
+                max-width: 1200px;
+            }
+        }
+
+        .pagination-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            color: gainsboro;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .pagination-button {
+            padding: 12px 24px;
+            font-family: rockwell;
+            font-size: 16px;
+            font-weight: bold;
+            background-color:rgba(0, 0, 0, 0.6);;
+            color: gainsboro;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px; /* Ancho fijo para ambos botones */
+        }
+
+        /* Flechas dentro de los botones */
+        .pagination-button.prev::before {
+            content: "◀";
+            margin-right: 8px;
+        }
+        
+        .pagination-button.next::after {
+            content: "▶";
+            margin-left: 8px;
+        }
+
+        /* Efecto hover */
+        .pagination-button:hover {
+            background-color: rgba(0, 0, 139, 0.8);
+        }
+
+    </style>
+
+     </head>
+
+<body>
+
+
+    <h2>Ver Amereida Pag.45</h2>
+    <pre> ¿no iluminan así las estrellas a los hombres 
+        y esclarecen 
+                           para que haya un pueblo?
+        
+        la travesía consigue su cielo como los ojos
+        
+</pre> 
+
+<div class="contenedor">
+    <div class="columna">
+     
+        
+       <p1>El texto nos invita a reflexionar sobre el poder de las estrellas para iluminar el camino de los hombres y guiarlos en su travesía de vida. Nos recuerda que la experiencia de viajar y explorar nos ofrece una visión más clara y profunda del mundo, ayudándonos a ver lo que hay y a presenciar lo que aparece en nuestro camino hacia la comprensión y la realización personal.<br>
+
+        Esta reflexión implica dejarse llevar y guiar por lo que conoce y lo desocnocido de las estrellas y el cielo, permitiendo ver el camino hasta la misma escencia del hombre permitiendolo crear su propio camino.
+       </p1>
+
+    </div>
+
+    <div class="columna">
+       
+        <p2>[12] Estos escritos le atribuían al Nuevo Mundo rasgos específicos que no sólo dieron cuenta de su contenido, sino que contribuyeron a definirlo como un espacio distinto de Europa, pero que era a la vez un reflejo de la comparación europea, en las que el contacto entre el Viejo y el Nuevo Mundo fue narrado, son una primera muestra de cómo los espacios y las culturas nunca existen por sí solos, independientes de la mirada humana. (Ver Taller Hacer Visible - Casiopea, 2019)<br>
+            [13] Cristóbal Colón, según se dice, nunca supo realmente adónde llegó y pensó que había desembarcado en Asia, verdadero objetivo de su viaje. Por eso hablaba de las Indias, término que, junto con Nuevo Mundo, acompaña a América para designar al nuevo continente. (Ver Taller Hacer Visible - Casiopea, 2019)
+            </p2>
+    </div>
+</div>
+
+
+  <div class="pagination-container">
+    <button class="pagination-button prev" onclick="navigate('Pagina 6.html')">Anterior</button>
+    <button class="pagination-button next" onclick="navigate('Pagina 8.html')">Siguiente</button>
+</div>
+
+  <script>
+   // Función de navegación
+   function navigate(page) {
+            window.location.href = page;
+        }
+  </script>
+
+   </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Rockwell, sans-serif;
+            background-image: url(Foto\ pag\ 3.2.jpg); 
+            background-size: cover;
+            background-position: center top 100px;
+            background-attachment: fixed; /* Para que la imagen de fondo no se desplace con el scroll */
+            background-repeat: no-repeat;
+            color: gainsboro;
+
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr; /* Una sola columna por defecto */
+            gap: 20px; /* Espacio entre columnas */
+            max-width: 100%;
+            margin-top: 40px; /* Centrar en pantallas grandes */
+            max-width: 600px; /* Ancho máximo para el contenedor */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        
+
+        h2, pre {
+    max-width: 400px; /* Establece un máximo de ancho para el texto */
+    width: 100%;
+    margin: 0 auto; /* Centra los elementos en la página */
+   
+}
+
+h2 {
+    font-family: Rockwell, sans-serif;
+    font-size: 14px;
+    margin-top: 30px;
+    color: grey;
+}
+
+pre {
+    font-family: Rockwell, sans-serif; 
+    font-size: 16px;
+    color: darkblue;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: left; /* Mantiene el formato original del <pre> */
+    margin-top: 20px;
+}
+        /* Media query para pantallas más grandes */
+        @media (min-width: 600px) {
+            .contenedor {
+                grid-template-columns: 1fr 1fr; /* Dos columnas solo en pantallas grandes */
+                max-width: 1200px;
+            }
+        }
+
+        .pagination-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            color: gainsboro;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .pagination-button {
+            padding: 12px 24px;
+            font-family: rockwell;
+            font-size: 16px;
+            font-weight: bold;
+            background-color:rgba(0, 0, 0, 0.6);;
+            color: gainsboro;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px; /* Ancho fijo para ambos botones */
+        }
+
+        /* Flechas dentro de los botones */
+        .pagination-button.prev::before {
+            content: "◀";
+            margin-right: 8px;
+        }
+        
+        .pagination-button.next::after {
+            content: "▶";
+            margin-left: 8px;
+        }
+
+        /* Efecto hover */
+        .pagination-button:hover {
+            background-color: rgba(0, 0, 139, 0.8);
+        }
+
+    </style>
+
+     </head>
+
+<body>
+
+    <h2>Ver Amereida Pag.12</h2>
+    <pre> ¿tiene signo nuestro origen?      ¿qué origen?</pre> 
+
+<div class="contenedor">
+    <div class="columna">
+     
+
+        <p1> El fragmento plantea la pregunta de si nuestro origen como americanos está marcado por algún tipo de señal o símbolo distintivo. Esto implica cuestionarse si hay algo intrínseco en nuestro origen que nos define, nos guía o nos conecta con un propósito mayor. El cual haria forma del nacimeinto de nuestra propia identidad. </p1>  
+        
+        <p1> Con esta idea se dió paso a la ilustración y la busqueda de una representacion de ese origen de nuestra identidad y como se va expandiendo hacia lo desconocido que hasta dejar aparecer lo que es.</p1> 
+            
+    </div>
+
+    <div class="columna">
+       
+        <p2>
+            <span class="resaltado">[1]</span> La genética (del griego antiguo γενετικός, genetikos genetivo y este de γένεσις génesis, “origen”) es el campo de la biología que busca comprender la herencia biológica que se transmite de generación en generación. (Ver El Regalo del Ser Origen - Casiopea, 2014)
+        <p2>
+            <span class="resaltado">[2]</span> Entendemos por identidad un conjunto de bienes culturales que permiten reconocer una sociedad de otra, y cuyo origen es preferentemente histórico. Tal identidad es propia de los sujetos y amalgamada con lo impuesto desde afuera, por tanto nace de un autorreconocimiento de la pertenencia a un grupo humano en particular y de toda la herencia que de este se hereda.(Ver El Regalo del Ser Origen - Casiopea, 2014)</p2>
+        </p2>
+        
+    </div>
+</div>
+
+
+<div class="pagination-container">
+    <button class="pagination-button prev" onclick="navigate('Pagina 1.html')">Anterior</button>
+    <button class="pagination-button next" onclick="navigate('Pagina 3.html')">Siguiente</button>
+</div>
+
+  <script>
+   // Función de navegación
+   function navigate(page) {
+            window.location.href = page;
+        }
+    
+</script>
+
+   </body>
+</html>

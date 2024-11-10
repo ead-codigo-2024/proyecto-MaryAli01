@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 4</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Rockwell, sans-serif;
+            background-image: url(Foto\ pag\ 4.jpg); 
+            background-size: cover;
+            background-position: center top 150px;
+            background-attachment: fixed; /* Para que la imagen de fondo no se desplace con el scroll */
+            background-repeat: no-repeat;
+            color: gainsboro;
+
+        }
+        
+        
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr; /* Una sola columna por defecto */
+            gap: 20px; /* Espacio entre columnas */
+            max-width: 100%;
+            margin-top: 30px; /* Centrar en pantallas grandes */
+            max-width: 600px; /* Ancho máximo para el contenedor */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px; /* Margen superior fijo */
+            margin-bottom: 30px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+    
+
+        h2, pre {
+    max-width: 400px; /* Establece un máximo de ancho para el texto */
+    width: 100%;
+    margin: 0 auto; /* Centra los elementos en la página */
+   
+}
+
+h2 {
+    font-family: Rockwell, sans-serif;
+    font-size: 14px;
+    margin-top: 30px;
+    color: grey;
+}
+
+pre {
+    font-family: Rockwell, sans-serif; 
+    font-size: 16px;
+    color: darkblue;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: left; /* Mantiene el formato original del <pre> */
+    margin-top: 20px;
+}
+
+
+@media (max-width: 400px) {
+    pre {
+        font-size: 14px; 
+    }
+}
+
+        /* Media query para pantallas más grandes */
+        @media (min-width: 600px) {
+            .contenedor {
+                grid-template-columns: 1fr 1fr; /* Dos columnas solo en pantallas grandes */
+                max-width: 1200px;
+            }
+        }
+
+        .pagination-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            color: gainsboro;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .pagination-button {
+            padding: 12px 24px;
+            font-family: rockwell;
+            font-size: 16px;
+            font-weight: bold;
+            background-color:rgba(0, 0, 0, 0.6);;
+            color: gainsboro;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px; /* Ancho fijo para ambos botones */
+        }
+
+        /* Flechas dentro de los botones */
+        .pagination-button.prev::before {
+            content: "◀";
+            margin-right: 8px;
+        }
+        
+        .pagination-button.next::after {
+            content: "▶";
+            margin-left: 8px;
+        }
+
+        /* Efecto hover */
+        .pagination-button:hover {
+            background-color: rgba(0, 0, 139, 0.8);
+        }
+
+
+    </style>
+
+
+     </head>
+
+<body>
+
+
+
+
+    <h2>Ver Amereida Pag.25</h2>
+<pre>Viviremos mutilados
+        hasta que el propio cuerpo 
+se zafe de su sombra 
+                bajo la luz de un origen
+consentido
+
+</pre>
+
+<div class="contenedor">
+    <div class="columna">
+     
+        <p2> Invita a reflexionar sobre la importancia de la autoaceptación, el autoconocimiento y el enfrentamiento de nuestras propias limitaciones y sombras internas para alcanzar la plenitud y la liberación. Sugiere que, hasta que no confrontemos nuestras debilidades y abracemos nuestro origen, estaremos incompletos y viviremos en la sombra de nuestra propia existencia.<br>
+
+        Con esto damos paso a una abstracción de ese autoconocimeinto que deja ver como estamos incompletos hasta encontarnos y aceptarnos como tal mientras la identidad y lo que nos hace ser se mezcla en la busqueda con lo que no conoce.</p2>
+        
+    
+    </div>
+
+    <div class="columna">
+       
+         <p1>[6] El desconocido americano para  Iommi está aún oculto, enmascarado, y solo poéticamente puede  desenmascararse aquello que por donación aparece, esta es para Iommi una  nueva forma de construir mundo en América.(Ver S. Arriagada, Tesis de Doctorado, 2017, p. 18) <br> 
+        [7] Hasta que nuestra propia desnudez (o libertad) no se transforme en traje... o uniforme, porque entonces todo fundamento muere... (Ver Godofredo Iommi, Amereida, 2014) </p2> 
+         
+        
+    </div>
+</div>
+
+  
+  <div class="pagination-container">
+    <button class="pagination-button prev" onclick="navigate('Pagina 3.html')">Anterior</button>
+    <button class="pagination-button next" onclick="navigate('Pagina 5.html')">Siguiente</button>
+</div>
+
+  <script>
+   // Función de navegación
+   function navigate(page) {
+            window.location.href = page;
+        }
+  </script>
+
+   </body>
+</html>

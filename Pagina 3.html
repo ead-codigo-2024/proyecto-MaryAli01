@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 3</title>
+    <style>
+
+body {
+            margin: 0;
+            padding: 20px;
+            font-family: Rockwell, sans-serif;
+            background-image: url(Foto\ pag\ 3.jpg); 
+            background-size: cover;
+            background-position: center top 250px;
+            background-attachment: fixed; /* Para que la imagen de fondo no se desplace con el scroll */
+            background-repeat: no-repeat;
+            color: gainsboro;
+
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr; /* Una sola columna por defecto */
+            gap: 20px; /* Espacio entre columnas */
+            max-width: 100%;
+            margin-top: 40px; /* Centrar en pantallas grandes */
+            max-width: 600px; /* Ancho máximo para el contenedor */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px; /* Margen superior fijo */
+            margin-bottom: 30px; 
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        
+
+        h2, pre {
+    max-width: 400px; /* Establece un máximo de ancho para el texto */
+    width: 100%;
+    margin: 0 auto; /* Centra los elementos en la página */
+   
+}
+
+h2 {
+    font-family: Rockwell, sans-serif;
+    font-size: 14px;
+    margin-top: 30px;
+    color: grey;
+}
+
+pre {
+    font-family: Rockwell, sans-serif; 
+    font-size: 16px;
+    color: darkblue;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: left; /* Mantiene el formato original del <pre> */
+    margin-top: 20px;
+}
+
+
+@media (max-width: 400px) {
+    pre {
+        font-size: 14px; 
+    }
+}
+
+    
+        /* Media query para pantallas más grandes */
+        @media (min-width: 600px) {
+            .contenedor {
+                grid-template-columns: 1fr 1fr; /* Dos columnas solo en pantallas grandes */
+                max-width: 1200px;
+            }
+        }
+
+        .pagination-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            color: gainsboro;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .pagination-button {
+            padding: 12px 24px;
+            font-family: rockwell;
+            font-size: 16px;
+            font-weight: bold;
+            background-color:rgba(0, 0, 0, 0.6);;
+            color: gainsboro;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px; /* Ancho fijo para ambos botones */
+        }
+
+        /* Flechas dentro de los botones */
+        .pagination-button.prev::before {
+            content: "◀";
+            margin-right: 8px;
+        }
+        
+        .pagination-button.next::after {
+            content: "▶";
+            margin-left: 8px;
+        }
+
+        /* Efecto hover */
+        .pagination-button:hover {
+            background-color: rgba(0, 0, 139, 0.8);
+        }
+
+    </style>
+
+
+     </head>
+
+<body>
+
+    <h2>Ver Amereida Pag.15</h2>
+    <pre>
+        américa regalada 
+                           ¿se ha aceptado a sí misma?
+
+
+¿cómo respondernos? 
+                               ¿podemos interrogar poéticamente 
+el propio desenvolvimiento del signo
+                                                       tratar de discernirlo 
+a través
+     de cómo nos hemos vuelto americanos     
+                                                          quienes lo somos 
+para el mismo 
+                        nos manifieste en la palabra?
+ </pre>
+
+
+
+<div class="contenedor">
+    <div class="columna">
+     
+<p1>Se suguiere que América, como continente y como conjunto de culturas, ha pasado por un proceso de aceptación o reconocimiento de su propia identidad.<br>
+
+           En conjunto, estas preguntas nos llevan a reflexionar sobre la complejidad de la identidad americana, así como sobre el papel de la poesía y la palabra en la exploración y expresión de esa identidad. Nos invitan a considerar cómo América se percibe a sí misma, cómo la percibimos nosotros como individuos y cómo esa percepción se refleja en la forma en que nos relacionamos con el continente y con nuestra propia identidad cultural.<br>
+            
+            La ilustración busca representar ese recibimeitno como un abrazo al america y su propia identidad hasta conocerse tal como se ha vuelto y caminart hacia la aceptacion.</p1>
+           
+        
+    </div>
+
+    <div class="columna">
+       
+        <p2>[3] Entonces vivir el constante regalo de América es lo que nos transforma en americanos, ser americano es saber vivir en constante aceptación de América, recibir a América. (Ver Taller de Amereida VII, Francisco Moya - Casiopea, 2014)<br>
+        [4] Sabemos que las palabras, por ser signos, traen, de suyo, el equívoco y que además lo que te digo no pretende precisiones; doble razón, entonces, para recordarte que la sensación que aún me dura procede de una multiplicidad en la que cada cosa era propia permitiendo, al mismo tiempo, la presencia, que no visión o referencia, de lo invisible. (Ver «Hay Que Ser Absolutamente Moderno», 2016, p. 13)<br>
+        [5] Poseemos capacidad de discernir: distinguir y cuestionar nuestras alternativas. Discernir con claridad, conlleva a ver en claridad, a entregarle un juicio de valor a nuestro vivir habitual. (Ver Taller de Amereida IV, Constanza Valdivia - Casiopea, 2014, Clase 5)
+        </p2>
+
+        
+    </div>
+</div>
+
+
+
+  <div class="pagination-container">
+    <button class="pagination-button prev" onclick="navigate('Pagina 2.html')">Anterior</button>
+    <button class="pagination-button next" onclick="navigate('Pagina 4.html')">Siguiente</button>
+</div>
+
+  <script>
+   // Función de navegación
+   function navigate(page) {
+            window.location.href = page;
+        }
+  </script>
+   
+
+   </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10</title>
+    <style>
+
+body {
+            margin: 0;
+            padding: 20px;
+            font-family: Rockwell, sans-serif;
+            background-image: url(Foto\ pag\ 10.jpg); 
+            background-size: cover;
+            background-position: center top 210px;
+            background-attachment: fixed; /* Para que la imagen de fondo no se desplace con el scroll */
+            background-repeat: no-repeat;
+            color: gainsboro;
+
+        }
+        
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr; /* Una sola columna por defecto */
+            gap: 20px; /* Espacio entre columnas */
+            max-width: 100%;
+            margin-top: 40px; /* Centrar en pantallas grandes */
+            max-width: 600px; /* Ancho máximo para el contenedor */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px; /* Margen superior fijo */
+            margin-bottom: 30px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+    
+
+        h2, pre {
+    max-width: 400px; /* Establece un máximo de ancho para el texto */
+    width: 100%;
+    margin: 0 auto; /* Centra los elementos en la página */
+   
+}
+
+h2 {
+    font-family: Rockwell, sans-serif;
+    font-size: 14px;
+    margin-top: 30px;
+    color: grey;
+}
+
+pre {
+    font-family: Rockwell, sans-serif; 
+    font-size: 16px;
+    color: darkblue;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: left; /* Mantiene el formato original del <pre> */
+    margin-top: 20px;
+}
+
+
+@media (max-width: 400px) {
+    pre {
+        font-size: 14px; 
+    }
+}
+
+
+        /* Media query para pantallas más grandes */
+        @media (min-width: 600px) {
+            .contenedor {
+                grid-template-columns: 1fr 1fr; /* Dos columnas solo en pantallas grandes */
+                max-width: 1200px;
+            }
+        }
+
+        .pagination-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            color: gainsboro;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .pagination-button {
+            padding: 12px 24px;
+            font-family: rockwell;
+            font-size: 16px;
+            font-weight: bold;
+            background-color:rgba(0, 0, 0, 0.6);;
+            color: gainsboro;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px; /* Ancho fijo para ambos botones */
+        }
+
+        /* Flechas dentro de los botones */
+        .pagination-button.prev::before {
+            content: "◀";
+            margin-right: 8px;
+        }
+        
+        .pagination-button.next::after {
+            content: "▶";
+            margin-left: 8px;
+        }
+
+        /* Efecto hover */
+        .pagination-button:hover {
+            background-color: rgba(0, 0, 139, 0.8);
+        }
+
+    </style>
+
+     </head>
+
+<body>
+
+
+    <h2>Ver Amereida Pag.77 y 79</h2>
+    <pre> Los viajes enseñan (entre otras cosas) que las palabras son como extrañas a las cosas que nombran
+
+        en cierto modo las cosas permanecen innominadas    innominables    cada vez más innominadas     vírgenes de nombre    en el desvío inasible    los hombres pasan    al acto poético    como se marca a las reses con un sello rojo vivo    acerca de los nombres a las cosas    durante un tiempo y para un largo tiempo
+        
+
+</pre> 
+
+<div class="contenedor">
+    <div class="columna">
+     
+        
+       <p1>El fragmento nos invita a reflexionar sobre la relación compleja entre las palabras y las cosas, y sobre el poder del lenguaje para dar forma a nuestra comprensión y apreciación del mundo. Nos recuerda que, aunque las palabras pueden ser una herramienta poderosa para comunicar y dar sentido a nuestra experiencia, las cosas tienen una existencia propia y una riqueza que trasciende las limitaciones del lenguaje humano. El acto poético de nombrar las cosas es una forma de honrar su singularidad y su valor en nuestra experiencia y en nuestra comprensión del mundo.
+         </p1>        
+        
+
+    </div>
+
+    <div class="columna">
+       
+        <p2>[20] Recuerdo haber trabajado con palabras de tinta y papel, modeladas con esa materia, ajenas a la voz –en lo posible, pues que detrás de toda palabra va siempre el dicho– para que únicamente por los ojos se entendiera. También he escrito palabras según un determinado comportamiento en la página dejando, en cambio, abiertas, no una sino múltiples posibilidades a la voz que las pronunciase. (Ver «Hay Que Ser Absolutamente Moderno», 2016, p. 40)<br> 
+            [21] ¿Recuerdas aquella de la Ilíada y el sutil canto cuarto del Infierno de Dante? Allí los nombres y epítetos respectivos se convierten en sonidos articulados por un orden interior que los ubica en la secuencia y producen el verso –ese «hacia» abierto– transformando la singularidad de los nombres propios en signos suspendidos en la amplitud de resonancias y sentidos. (Ver «Hay Que Ser Absolutamente Moderno», 2016, p. 40)<br>
+            [22] Escribí, además, algunos borradores hasta reducir tales palabras a objetos que admiten, sin decirlas, múltiples significaciones y resonancias como el prisma sus colores. A menudo decimos que tal es la riqueza de la simplicidad; sin embargo, esa forma ya no me parece la adecuada y discreta.(Ver «Hay Que Ser Absolutamente Moderno», 2016, p. 40)
+             </p2>
+    </div>
+</div>
+
+
+
+
+<div class="pagination-container">
+    <button class="pagination-button prev" onclick="navigate('Pagina 9.html')">Anterior</button>
+    <button class="pagination-button next" onclick="navigate('Pagina 11.html')">Siguiente</button>
+</div>
+
+  <script>
+   // Función de navegación
+   function navigate(page) {
+            window.location.href = page;
+        }
+  </script>
+
+
+   </body>
+</html>

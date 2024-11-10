@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 6</title>
+    <style>
+
+body {
+            margin: 0;
+            padding: 20px;
+            font-family: Rockwell, sans-serif;
+            background-image: url(Foto\ pag\ 6.2.jpg); 
+            background-size: cover;
+            background-position: center top 100px;
+            background-attachment: fixed; /* Para que la imagen de fondo no se desplace con el scroll */
+            background-repeat: no-repeat;
+            color: gainsboro;
+
+        }
+        
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr; /* Una sola columna por defecto */
+            gap: 20px; /* Espacio entre columnas */
+            max-width: 100%;
+            margin-top: 40px; /* Centrar en pantallas grandes */
+            max-width: 600px; /* Ancho máximo para el contenedor */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px; /* Margen superior fijo */
+            margin-bottom: 30px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+    
+
+        h2, pre {
+    max-width: 400px; /* Establece un máximo de ancho para el texto */
+    width: 100%;
+    margin: 0 auto; /* Centra los elementos en la página */
+   
+}
+
+h2 {
+    font-family: Rockwell, sans-serif;
+    font-size: 14px;
+    margin-top: 30px;
+    color: grey;
+}
+
+pre {
+    font-family: Rockwell, sans-serif; 
+    font-size: 16px;
+    color: darkblue;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: left; /* Mantiene el formato original del <pre> */
+    margin-top: 20px;
+}
+
+
+@media (max-width: 400px) {
+    pre {
+        font-size: 14px; 
+    }
+}
+
+
+        /* Media query para pantallas más grandes */
+        @media (min-width: 600px) {
+            .contenedor {
+                grid-template-columns: 1fr 1fr; /* Dos columnas solo en pantallas grandes */
+                max-width: 1200px;
+            }
+        }
+
+        .pagination-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            color: gainsboro;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .pagination-button {
+            padding: 12px 24px;
+            font-family: rockwell;
+            font-size: 16px;
+            font-weight: bold;
+            background-color:rgba(0, 0, 0, 0.6);;
+            color: gainsboro;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px; /* Ancho fijo para ambos botones */
+        }
+
+        /* Flechas dentro de los botones */
+        .pagination-button.prev::before {
+            content: "◀";
+            margin-right: 8px;
+        }
+        
+        .pagination-button.next::after {
+            content: "▶";
+            margin-left: 8px;
+        }
+
+        /* Efecto hover */
+        .pagination-button:hover {
+            background-color: rgba(0, 0, 139, 0.8);
+        }
+
+    </style>
+
+     </head>
+
+<body>
+
+
+    <h2>Ver Amereida Pag.37</h2>
+    <pre> ellas abren en su cruz 
+        todos los puntos cardinales 
+el norte la designa sur 
+         pero ella no es el sur 
+porque en este cielo americano
+         también sus luces equivocan la esperanza 
+                       – regalo o constelación
+
+para encender de nuevo el mapa
+
+</pre> 
+
+<div class="contenedor">
+    <div class="columna">
+     
+        
+       <p1>El fragmento poético se puede interpretar como una invitación a utilizar las estrellas como guías para desvelar la esencia de América, que se nos otorga como un regalo valioso a través del mapa celestial que crean. Es una reflexión sobre la importancia de buscar orientación y comprensión más allá de las apariencias superficiales, y reconocer el valor único y la riqueza de América en toda su diversidad y complejidad.</p1> 
+
+        
+
+    </div>
+
+    <div class="columna">
+       
+        <p2>[11] “Dicen las abuelas tehuelches que una de las huellas que el ñandu dejo en su carrera sobre el arcoíris quedo para siempre grabada en el cielo, dibujada con cuatro estrellas. La llamaron choiols, que significa “Huella del Ñandu en el cielo. “Esta constelación no es otra que la cruz del sur, el inevitable punto de referencia de todos los caminantes y marinos del hemisferio austral. Korkoronke no pudo hallar sus boleadoras en el suelo. Pero las descubrió en el cielo, convertidas en una nueva constelación que recibió el nombre de cheljelen. Que no es otra que las Tres Marías.” (Ver Taller Hacer Visible - Casiopea, 2019) </p2>
+        
+    </div>
+</div>
+
+
+<div class="pagination-container">
+    <button class="pagination-button prev" onclick="navigate('Pagina 5.html')">Anterior</button>
+    <button class="pagination-button next" onclick="navigate('Pagina 7.html')">Siguiente</button>
+</div>
+
+  <script>
+   // Función de navegación
+   function navigate(page) {
+            window.location.href = page;
+        }
+  </script>
+
+
+   </body>
+</html>

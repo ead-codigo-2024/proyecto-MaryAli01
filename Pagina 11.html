@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 11</title>
+    <style>
+
+body {
+            margin: 0;
+            padding: 20px;
+            font-family: Rockwell, sans-serif;
+            background-image: url(Foto\ pag\ 11.jpg); 
+            background-size: cover;
+            background-position: center top 150px;
+            background-attachment: fixed; /* Para que la imagen de fondo no se desplace con el scroll */
+            background-repeat: no-repeat;
+            color: gainsboro;
+
+        }
+        
+
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr; /* Una sola columna por defecto */
+            gap: 20px; /* Espacio entre columnas */
+            max-width: 100%;
+            margin-top: 0px; /* Centrar en pantallas grandes */
+            max-width: 600px; /* Ancho máximo para el contenedor */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 0; 
+            margin-bottom: 30px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+    
+
+        h2, pre {
+    max-width: 400px; /* Establece un máximo de ancho para el texto */
+    width: 100%;
+    margin: 0 auto; /* Centra los elementos en la página */
+   
+}
+
+h2 {
+    font-family: Rockwell, sans-serif;
+    font-size: 14px;
+    margin-top: 30px;
+    color: grey;
+}
+
+pre {
+    font-family: Rockwell, sans-serif; 
+    font-size: 16px;
+    color: darkblue;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: left; /* Mantiene el formato original del <pre> */
+    margin-top: 20px;
+}
+
+
+@media (max-width: 400px) {
+    pre {
+        font-size: 14px; 
+    }
+}
+
+
+        /* Media query para pantallas más grandes */
+        @media (min-width: 600px) {
+            .contenedor {
+                grid-template-columns: 1fr 1fr; /* Dos columnas solo en pantallas grandes */
+                max-width: 1200px;
+            }
+        }
+
+        .pagination-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            color: gainsboro;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .pagination-button {
+            padding: 12px 24px;
+            font-family: rockwell;
+            font-size: 16px;
+            font-weight: bold;
+            background-color:rgba(0, 0, 0, 0.6);;
+            color: gainsboro;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px; /* Ancho fijo para ambos botones */
+        }
+
+        /* Flechas dentro de los botones */
+        .pagination-button.prev::before {
+            content: "◀";
+            margin-right: 8px;
+        }
+        
+        .pagination-button.next::after {
+            content: "▶";
+            margin-left: 8px;
+        }
+
+        /* Efecto hover */
+        .pagination-button:hover {
+            background-color: rgba(0, 0, 139, 0.8);
+        }
+
+    </style>
+
+     </head>
+
+<body>
+
+
+    <h2>Ver Amereida Pag.92 y 93</h2>
+    <pre> ¿estamos en una tierra donde el 23 obrar se engendra por un único acto de partir?
+
+        manzanas trazaremos a lo largo del recorrido en determinados lugares quizás cuales perfiles y quizás cuales litorales esto hoy no lo podemos saber pero sí que un obrar se dará pues la búsqueda de la real palabra la real palabra que permite obrar se da en el obrar
+        
+        
+
+</pre> 
+
+<div class="contenedor">
+    <div class="columna">
+     
+        
+       <p1>El fragmento nos invita a reflexionar sobre la naturaleza del proceso creativo y el papel fundamental del acto de partir, de iniciar un recorrido, en la creación de una obra. Nos recuerda que cada paso en el camino es importante, y que la verdadera esencia de la obra se revela a medida que nos comprometemos con el proceso y nos dejamos llevar por la acción misma de crear. La búsqueda de la real palabra, la verdadera comprensión y significado de la obra, se encuentra en el mismo acto de obrar.<br>
+
+        La ilustración nace entonces de esa búsqueda y de cómo la real palabra y el verdadero significado de las cosas crean el camino hacia el conocimiento de la identidad de las cosas y las personas como tal.
+        </p1>        
+        
+
+    </div>
+
+    <div class="columna">
+       
+        <p2>[23] Es en esto que recae el obrar, en el Obrar para un otro, para el individuo, es la diferencia entre individualismo e individualidad, como la diferencia entre sentimiento y sentimentalismo. Si no se encuentra esa gratuidad que se nos presenta, esa gratuidad que es el espíritu de la forma, el arte creador no puede ser obra del alma, obra que revela el obrar. Es entonces la poesía la que nos revela esta gratuidad, a través de la palabra, es el oficio y la poesía trabajando en conjunto para con el obrar. (Ver De La Gratuidad y el Obrar, Taller Amereida VII - Casiopea, 2014)<br>
+            [24] En la Ciudad Abierta realizamos actos; son ellos, los actos poéticos, los que nos ubican en la partida. Son inaugurales, y es que en ellos palpamos el origen. Amereida, en voz poética, nos indica con reiteración: “es por esto que mañana partimos a recorrer américa”. (Ver «Ha-lugar de un encuentro», 2012, p. 13)<br> 
+            [25] Si revela el acto humano, es por tal acción que ella llega a ser la Fiesta. Y digo bien el acto. Es verdad que el poeta es un hombre de palabras, pero, también, él es mucho más que eso. El poeta es el portador de la Fiesta. La poesía se hace en su persona, en su cuerpo, en su lenguaje, en su vida y no solamente «entre las sábanas». (Ver «Hay Que Ser Absolutamente Moderno», 2016, p. 23)
+              </p2>
+    </div>
+</div>
+
+<div class="pagination-container">
+    <button class="pagination-button prev" onclick="navigate('Pagina 10.html')">Anterior</button>
+    <button class="pagination-button next" onclick="navigate('Pagina 12.html')">Siguiente</button>
+</div>
+
+  <script>
+   // Función de navegación
+   function navigate(page) {
+            window.location.href = page;
+        }
+  </script>
+
+   </body>
+</html>
